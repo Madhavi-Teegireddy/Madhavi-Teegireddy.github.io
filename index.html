@@ -1,188 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MADHAVI TIGIREDDI | FULL STACK WEB DEVELOPER</title>
-  <link rel="shortcut icon" href="https://img.icons8.com/office/80/000000/person-female-skin-type-1-2.png" type="image/x-icon">
-  <!-- ===== CSS Files ===== -->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="css/skins/color-1.css"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!-- ====== Style Switcher ====== -->
-  <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
-  <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
-  <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
-  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
-  <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
-  <link rel="stylesheet" href="css/style-switcher.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/19ba21573e.js" crossorigin="anonymous"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("yInfKq3RKqNrQCrdU");
-})();
-</script>
 </head>
 <body>
-
-    <div class="msg-pop-up">Message Sent, Thank You.</div>
-    <div class="failed-msgpop">Please Fill Proper Information</div>
-
-  <!-- ===== Main Container Start ===== -->
-  <div class="main-container">
-    <!-- ===== Aside Start ===== -->
-    <div class="aside">
-      <div class="logo">
-        <a href="#"><span>P</span>ortfolio</a>
-      </div>
-      <div class="nav-toggler">
-        <span></span>
-      </div>
-      <ul class="nav">
-        <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-        <li><a href="#services"><i class="fa fa-list"></i>Skills</a></li>
-        <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Projects</a></li>
-        <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
-      </ul>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
     </div>
-    <!-- ===== Aside End ===== -->
-    <!-- ===== Main Content Start ===== -->
-        <div class="main-content">
-          <!-- ===== Home Section Start ===== -->
-          <section class="home active section" id="home"> 
-            <div class="container">
-              <div class="row" id="heroimgrevv">
-                <div class="home-info padd-15">
-                  <h3 class="hello">Hello, my name is <br/> <span class="name">Madhavi Latha T</span></h3>
-                  <h3 class="my-profession">I' m a <span class="typing"></span></h3>
-                  <div class="introdu">Passionate Full
-                    Stack Web Developer with a
-                    specialization in MERN stack.
-                    Skilled, collaborative and
-                    attentive developer with a drive
-                    to develop the most relevant
-                    products. Always looking
-                    forward to learning something
-                    new to strengthen skills learned.
-                    </div>
-                    <div class="home__icon_cont">
-                      <a href="https://github.com/madhavi-teegireddy" target="_blank"><div class="icon"><i class="fab fa-github"></i></div></a>
-                      <a href="https://www.linkedin.com/in/madhavi-t-3082a0253/" target="_blank"><div class="icon"><i class="fab fa-linkedin"></i></div></a>
-                      <!-- <a href="https://twitter.com/madhu" target="_blank"><div class="icon"><i class="fab fa-twitter"></i></div></a> -->
-                    
-                    </div>
-                  <a href="./Resume/Madhavi_Latha_fw20_0220.pdf" download="Madhavi Latha Resume" class="btn">Download Resume</a>
-                </div>
-                <div class="home-img padd-15">
-                  <img src="images/photo.jpg" alt="mypic">
-                </div>
-              </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About Me</a></li>
+                <li><a href="#project" class="menu-btn">Projects</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li><a href="#resume" class="menu-btn">Resume</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
-          </section>
-          <!-- ===== Home Section End ===== -->
-          <!-- ===== About Section Start ===== -->
-          <section class="about section" id="about"> 
-            <div class="container">
-              <div class="row">
-                <div class="section-title padd-15">
-                  <h2>About Me</h2>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+        <section class="about" id="home">
+            <div class="max-width">
+                <div class="about-content">
+                    <div class="column left">
+                        <img src="images/mm.jpg" alt="">
+                    </div>
+                    <div class="column right">
+                        <p class="text-1">Hello, my name is</p><br/>
+                        <p class="text-2">Madhavi Latha</p><br/>
+                        <p class="text">And I'm a <span class="typing"></span></p>
+                        <p class="text-4">Passionate Full Stack Web Developer with
+                            a specialization in MERN stack. Skilled, collaborative
+                             and attentive developer with a drive to develop the
+                              most relevant products. Always looking forward to
+                               learn something new to strengthen skills learned.</p>
+                        <a href="#">Download CV</a>
+                    </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="about-content padd-15">
-                  <div class="row">
-                    <div class="about-text padd-15">
-                      
-                      <p> Hello! My name is Madhavi Latha, I enjoy creating things that live on the internet. My interest in web development started back last year when I was trying to edit things on the web - taught me a lot about HTML & CSS!.
-                          <br/>
-                          Fast forwarding to today, I built a number of web applications and 3 Major projects. Learned a great deal about teamwork, leadership and communication. After months of rigorous training, here I am looking for an opportunity as a full stack web developer. 
-                      </p>
-                    </div>
-                  </div>
-                  <div class="row about___box">
-                    <div class="personal-info padd-15">
-                      <div class="row about___info">
-                      
-                      
-                        <div class="info-item padd-15 adjus">
-                          <p ><i class="fas fa-user-graduate"></i> <a href="https://madhavi-teegireddy.github.io/" target="_blank">my-portfolio-madhavi</a></p>
-                        </div>
-                        <div class="info-item padd-15">
-                          <p><i class="far fa-envelope"></i> <a href="mailto:madhavitigireddi1@gmail.com" target="_blank"> madhavitigireddi1@gmail.com</a></p>
-                        </div>
-                       
-                        <div class="info-item padd-15">
-                          <p><i class="fas fa-mobile-alt"></i> <a href="https://wa.me/7981910116" target="_blank"> +91-7981910116</a></p>
-                        </div>
-                        <div class="info-item padd-15">
-                          <p><span><i class="fas fa-map-marker-alt"></i> EastGodavari, Andhra Pradesh</span></p>
-                        </div>
-                        
-                      </div>
-                      <div class="row">
-                        <div class="buttons padd-15">
-                          <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
-                        </div>
-                      </div>
-                    </div>
-                  
+            </div>
+        </section>
+
+       
     
-                    <!-- <h2 class="edu">Education</h2> -->
-                    <div class="section-title padd-15 margtop">
-                      <h2>Education</h2>
-                    </div>
-                    <div class="EDUCATION">
-                      <div>
-                       
-                        <div class="eduupdate">
-                        <div class="edu_cont">
-                          <h4 class="course_">Full-Stack Web Development</h4>
-                          <p class="institute">Masai School, Bangalore</p>
-                          <p class="duration">May 2022 - Present</p>
-                        </div>
-                        <div class="edu_cont">
-                          <h4 class="course_">B.Tech</h4>
-                          <p class="institute">Rajiv Gandhi University of Knowledge and Technology- IIIT Nuzvid A.P </p>
-                          <p class="duration">June 2013 - April 2017</p>
-                        </div>
-                      </div>
-                       
-                      </div>
-                    </div>
-    
-                  </div>
-                 
-                  </div>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="text-5">
+                    Passionate Full Stack Web Developer with
+                        a specialization in MERN stack. Skilled, collaborative
+                         and attentive developer with a drive to develop the
+                          most relevant products. Always looking forward to
+                           learn something new to strengthen skills learned.
                 </div>
-              </div> 
             </div>
-            <div>
-              <p class="contact-sub-title padd-15">Made with ❤ By Madhavi Teegireddy</p>
+        </div>
+    </section>
+
+    <!-- services section start -->
+    <!-- <section class="services" id="projects">
+        <div class="max-width">
+            <h2 class="title">My services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Web Design</div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Advertising</div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Apps Design</div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                    </div>
+                </div>
+               </div>
             </div>
-          </section>
-          <!-- ===== About Section End ===== -->
+        </div>
+    </section> -->
+
+    <!-- Project section starts -->
+    <section class="projects" id="project">
+        <div class="pro-container">
+            <h1 class="pro-title">My Projects</h1>
+            <div class="pro-list">
+                <div class="work">
+                    <img src="images/fatsecret.PNG">
+                    <div class="layer">
+                        <h3>fatsecret</h3>
+                        <p>The app will give infromation related to user
+                            personal food info
+                        </p>
+                        <a href="https://chic-kitsune-d87b4f.netlify.app/" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://chic-kitsune-d87b4f.netlify.app/" target="_blank">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/dermtore.PNG">
+                    <div class="layer">
+                        <h3>fatsecret</h3>
+                        <p>The app will give infromation related to user
+                            personal food info
+                        </p>
+                        <a href="https://chic-kitsune-d87b4f.netlify.app/" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://chic-kitsune-d87b4f.netlify.app/" target="_blank">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/nykaa.PNG">
+                    <div class="layer">
+                        <h3>fatsecret</h3>
+                        <p>The app will give infromation related to user
+                            personal food info
+                        </p>
+                        <a href="https://chic-kitsune-d87b4f.netlify.app/" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://chic-kitsune-d87b4f.netlify.app/" target="_blank">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/fatsecret.PNG">
+                    <div class="layer">
+                        <h3>fatsecret</h3>
+                        <p>The app will give infromation related to user
+                            personal food info
+                        </p>
+                        <a href="https://chic-kitsune-d87b4f.netlify.app/" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://chic-kitsune-d87b4f.netlify.app/" target="_blank">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/dermtore.PNG">
+                    <div class="layer">
+                        <h3>fatsecret</h3>
+                        <p>The app will give infromation related to user
+                            personal food info
+                        </p>
+                        <a href="https://chic-kitsune-d87b4f.netlify.app/" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://chic-kitsune-d87b4f.netlify.app/" target="_blank">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/nykaa.PNG">
+                    <div class="layer">
+                        <h3>fatsecret</h3>
+                        <p>The app will give infromation related to user
+                            personal food info
+                        </p>
+                        <a href="https://chic-kitsune-d87b4f.netlify.app/" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://chic-kitsune-d87b4f.netlify.app/" target="_blank">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills here -->
+    <!-- Contact here-->
 
 
+     <!-- footer section start -->
+     <footer>
+      <span>Created By <a href="">Madhavi Latha</a> | <span class="far fa-copyright"></span> 2022 october</span>
+  </footer>
 
-
-
-
-
-
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-  <script src="js/script.js"></script>
-  <script src="js/style-switcher.js"></script>
-  <script src="js/mail.js"></script>
-  <script src="./projects/project.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
