@@ -425,6 +425,19 @@ section .title::after{
     font-size: 25px;
     margin-bottom: 20px;
 }
+.layer div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width:200px;
+    /* width:auto; */
+    border:1px solid red;
+  
+}
+.layer div div{
+    width:100px;
+    border:1px solid white;
+}
+
 .layer a{
     margin-top: 20px;
     color:#0000ff;
@@ -515,25 +528,29 @@ section .title::after{
     overflow: hidden;
     border-style: solid;
     border-width: 3px;
-    border-image: conic-gradient(black,black, rgb(82, 82, 180), blue,rgb(115, 115, 190), black, black) 3;
+    border-image: conic-gradient(black,black, rgb(82, 82, 180),blue,rgb(115, 115, 190), black, black) 3;
     border-radius: 20px;
     margin-bottom: 30px;
     /* border:1px solid red; */
    
 }
 
-.know .know-work img{
-    width:100px;
-    height:100px;
-    /* border:1px solid red; */
-    margin-left: 35%;
+.know .know-work div{
+    margin: auto;
+    width:80px;
+    height: 80px;
+}
+.know .know-work div img{
+    width:100%;
+    height:100%;
 }
 
 
 
 .know-work p{
     color:gray;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 550;
     margin-top: 15px;
     margin-left: 15px;
 }
@@ -619,13 +636,22 @@ section .title::after{
 }
 
 /* contact section styling */
-.contact .title::after{
-    content: "get in touch";
+.contact{
+    background-color: black;
 }
+
+.contact .title{
+    color:white;
+    font-size: 30px;
+}
+/* .contact .title::after{
+    content: "get in touch";
+} */
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
 .contact .contact-content .text{
+    color:gray;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -646,13 +672,13 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: white;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: gray;
 }
 .contact .right form .fields{
     display: flex;
@@ -674,7 +700,8 @@ section .title::after{
 .contact .right form .textarea textarea{
     height: 100%;
     width: 100%;
-    border: 1px solid lightgrey;
+    border: 1px solid gray;
+    background-color: #000000;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
@@ -682,11 +709,12 @@ section .title::after{
     font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
 }
-.contact .right form .field input:focus,
+/* .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
-}
+    border-color: red;
+} */
 .contact .right form .textarea textarea{
+    background-color: #000000;
   padding-top: 10px;
   resize: none;
 }
@@ -695,7 +723,7 @@ section .title::after{
   align-items: center;
 }
 .right form .button-area button{
-  color: #fff;
+  /* color: red; */
   display: block;
   width: 160px!important;
   height: 45px;
@@ -705,14 +733,21 @@ section .title::after{
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: crimson;
-  border: 2px solid crimson;
+  background: #0000ff;
   transition: all 0.3s ease;
 }
-.right form .button-area button:hover{
-  color: crimson;
-  background: none;
+.sub-title a{
+color:gray;
 }
+.right form .button-area button:hover{
+  color: #0000ff;
+  background: none;
+  border:2px solid #0000ff;
+  color:gray;
+}
+
+
+
 /* footer section styling */
 footer{
     background: #111;
@@ -813,7 +848,7 @@ footer span a:hover{
         margin-bottom: 35px;
     }
     .about .about-content .left img{
-        height: 250px;
+        height: 300px;
         width: 250px;
     }
     .pro-list{
@@ -841,8 +876,8 @@ footer span a:hover{
         width: 100%;
     }
     .about .about-content .left img{
-        height: 250px;
-        width: 250px;
+        height: 280px;
+        width: 220px;
     }
     .pro-list{
         grid-template-columns: repeat(1,1fr);
@@ -884,7 +919,7 @@ footer span a:hover{
         line-height: 38px;
     }
     .about .about-content .left img{
-        height: 220px;
+        height: 280px;
         width: 220px;
     }
     .pro-list{
