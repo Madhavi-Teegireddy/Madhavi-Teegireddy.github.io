@@ -351,15 +351,26 @@ section .title::after{
     margin: auto;
     margin-top: 50px;
     /* margin: auto; */
-    height: 600px;
+    height: auto;
     /* border: 1px solid red; */
+   
+
+}
+.stack{
+    text-align: center;
+    margin-bottom: 18px;
 }
 
 .work{
-    border-radius: 10px;
     position: relative;
     overflow: hidden;
     /* border: 1px solid white; */
+    /* border: linear-gradient(to left, #743ad5, #d53a9d); */
+    border-style: solid;
+    border-width: 3px;
+    border-image: conic-gradient(black, black, black, blue, black, black, black) 1;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 .work img{
@@ -369,8 +380,18 @@ section .title::after{
     transition: transform 0.5s;
 }
 
-.work div h3, p{
-    color:white;
+.work  h3{
+    color:gray;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.work p{
+    color:gray;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 .work a{
     color:white
@@ -466,78 +487,73 @@ section .title::after{
 
 /* skills section styling */
 
-.skills .title::after{
-    content: "what i know";
+.know{
+    background-color:black;
 }
-.skills .skills-content .column{
-    width: calc(50% - 30px);
+.know-title{
+    color:white;
+    text-align: center;
+    font-size: 40px;
 }
-.skills .skills-content .left .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
+
+.know-list{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    width:70%;
+    gap:30px;
+    margin: auto;
+    margin-top: 50px;
+    height: auto;
 }
-.skills .skills-content .left p{
-    text-align: justify;
+.know-stack{
+    text-align: center;
+    margin-bottom: 18px;
 }
-.skills .skills-content .left a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-.skills .skills-content .left a:hover{
-    color: crimson;
-    background: none;
-}
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-.skills .skills-content .right .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right span{
-    font-weight: 500;
-    font-size: 18px;
-}
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
+
+.know-work{
     position: relative;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 3px;
+    border-image: conic-gradient(black,black, rgb(82, 82, 180), blue,rgb(115, 115, 190), black, black) 3;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    /* border:1px solid red; */
+   
 }
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: crimson;
+
+.know .know-work img{
+    width:100px;
+    height:100px;
+    /* border:1px solid red; */
+    margin-left: 35%;
 }
-.skills-content .right .html::before{
-    width: 90%;
+
+
+
+.know-work p{
+    color:gray;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 15px;
 }
-.skills-content .right .css::before{
-    width: 60%;
+
+
+.know-work{
+    transition:transform 0.5s;
 }
-.skills-content .right .js::before{
-    width: 80%;
-}
-.skills-content .right .php::before{
-    width: 50%;
-}
-.skills-content .right .mysql::before{
-    width: 70%;
-}
+ .know-work:hover{
+    transform: scale(1.1);
+ }
+ 
+
+
+
+
+
+
+
+
 
 /* teams section styling */
 .teams .title::after{
@@ -723,6 +739,9 @@ footer span a:hover{
     .pro-list{
         grid-template-columns: repeat(3,1fr);
     }
+    .know-list {
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 
 @media (max-width: 991px) {
@@ -800,6 +819,9 @@ footer span a:hover{
     .pro-list{
         grid-template-columns: repeat(2,1fr);
     }
+    .know-list {
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 @media (max-width: 690px) {
@@ -826,6 +848,9 @@ footer span a:hover{
         grid-template-columns: repeat(1,1fr);
         width:450px;
         height:100%;
+    }
+    .know-list {
+        grid-template-columns: repeat(1,1fr);
     }
 }
 
@@ -866,5 +891,8 @@ footer span a:hover{
         grid-template-columns: repeat(1,1fr);
         width:350px;
         height:100%;
+    }
+    .know-list {
+        grid-template-columns: repeat(1,1fr);
     }
 }
