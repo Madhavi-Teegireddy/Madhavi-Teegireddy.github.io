@@ -35,18 +35,13 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Full Stack Developer", "Web Developer", "MERN-Stack Developer", "React Developer"],
+        strings: ["Full-Stack Web-Developer", "MERN-Stack Developer"],
         typeSpeed: 100,
-        backSpeed: 60,
+        backSpeed: 80,
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+    
 
     // owl carousel script
     $('.carousel').owlCarousel({
