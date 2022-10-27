@@ -90,14 +90,11 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    /* background: crimson; */
     background:00264D;
-    /* background: black; */
-    /* background-color:#3457D5; */
-    /* background-image: linear-gradient(#1e88e5,#42a5f5,#90caf9) */
     background-image: linear-gradient(rgb(8, 8, 37),rgb(14, 12, 29),rgb(14, 11, 41),rgb(47, 36, 78))
 
 }
+
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -105,11 +102,10 @@ section .title::after{
 }
 .navbar .logo a{
     color: #fff;
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 600;
 }
 .navbar .logo a span{
-    /* color: crimson; */
     color:#3457D5;
     transition: all 0.3s ease;
 }
@@ -132,7 +128,6 @@ section .title::after{
     color: #3457D5;
 }
 .navbar.sticky .menu li a:hover{
-    /* color: #fff; */
     color:#0000ff;
 }
 
@@ -179,11 +174,7 @@ section .title::after{
     height: 100vh;
     color: #fff;
     flex-wrap: wrap;
-    /* align-items: center; */
     justify-content: space-between;
-    /* min-height: 500px; */
-    /* background-size: cover; */
-    /* background-attachment: fixed; */
     font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
@@ -211,7 +202,6 @@ section .title::after{
 }
 
 .pic img{
-    /* width:240px; */
     border-radius: 20px;
     height:300px;
 }
@@ -242,6 +232,7 @@ section .title::after{
 .about{
     background-color:#000000;
 }
+
 /* about section styling */
 
 .about .about-content .left{
@@ -261,7 +252,6 @@ section .title::after{
 }
 .about .about-content .right .text{
     font-size: 20px;
-    /* font-weight: 600; */
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
@@ -280,7 +270,6 @@ section .title::after{
     border-radius: 6px;
     transition: all 0.3s ease;
 }
-
 .about .about-content .right  .text-4{
     display: inline-block;
     color: grey;
@@ -291,19 +280,13 @@ section .title::after{
 }
 .about .about-content .right .text-2{
     display: inline-block;
-    /* background: crimson; */
     color:#3457D5;
     font-size: 30px;
-    /* font-weight:500; */
-    /* padding: 10px 30px; */
-    /* margin-top: 20px; */
     border-radius: 6px;
-    /* border: 2px solid crimson; */
     transition: all 0.3s ease;
 }
 .about .about-content .right .text-5{
     display: inline-block;
-    /* background: crimson; */
     color:gray;
     font-size: 20px;
     font-weight:500;
@@ -312,6 +295,11 @@ section .title::after{
     border-radius: 6px;
     /* border: 2px solid crimson; */
     transition: all 0.3s ease;
+}
+
+.about .title{
+        color:white;
+        font-size: 30px;
 }
 .about .about-content .right a{
     display: inline-block;
@@ -356,11 +344,11 @@ section .title::after{
     gap:20px;
     margin: auto;
     margin-top: 50px;
-    /* margin: auto; */
     height: auto;
-    /* border: 1px solid red; */
-   
-
+}
+.pro-container .title{
+        color:white;
+        font-size: 30px;
 }
 .stack{
     text-align: center;
@@ -370,8 +358,6 @@ section .title::after{
 .work{
     position: relative;
     overflow: hidden;
-    /* border: 1px solid white; */
-    /* border: linear-gradient(to left, #743ad5, #d53a9d); */
     border-style: solid;
     border-width: 3px;
     border-image: conic-gradient(black, black, black, blue, black, black, black) 1;
@@ -436,14 +422,9 @@ section .title::after{
     grid-template-columns: repeat(2,1fr);
     width:auto;
     gap:30px;
-    /* width:auto; */
-    /* border:1px solid red; */
-  
 }
 .layer div div{
     width:70px;
-    /* border:1px solid white; */
-    /* margin-left: 30px; */
 }
 
 
@@ -467,10 +448,9 @@ section .title::after{
 .know{
     background-color:black;
 }
-.know-title{
-    color:white;
-    text-align: center;
-    font-size: 40px;
+.know-container .title{
+        color:white;
+        font-size: 30px;
 }
 
 .know-list{
@@ -494,9 +474,7 @@ section .title::after{
     border-width: 3px;
     /* border-image: conic-gradient(black,black, rgb(82, 82, 180),blue,rgb(115, 115, 190), black, black) 3; */
     border-radius: 20px;
-    margin-bottom: 30px;
-    /* border:1px solid red; */
-   
+    margin-bottom: 30px;   
 }
 
 .know .know-work div{
@@ -514,10 +492,10 @@ section .title::after{
 
 .know-work p{
     color:gray;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 550;
+    text-align: center;
     margin-top: 15px;
-    margin-left: 15px;
 }
 
 
@@ -574,12 +552,6 @@ section .title::after{
 }
 
 
-
-
-
-
-
-
 /* contact section styling */
 .contact{
     background-color: black;
@@ -589,9 +561,7 @@ section .title::after{
     color:white;
     font-size: 30px;
 }
-/* .contact .title::after{
-    content: "get in touch";
-} */
+
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
@@ -647,6 +617,7 @@ section .title::after{
     width: 100%;
     border: 1px solid gray;
     background-color: #000000;
+    color:white;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
@@ -654,12 +625,10 @@ section .title::after{
     font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
 }
-/* .contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus{
-    border-color: red;
-} */
+
 .contact .right form .textarea textarea{
     background-color: #000000;
+    color:white;
   padding-top: 10px;
   resize: none;
 }
@@ -841,6 +810,14 @@ footer span a:hover{
     .git-list{
         grid-template-columns: repeat(1,1fr);
     }
+    .know-work p{
+        color:gray;
+        font-size: 12px;
+        font-weight: 550;
+        text-align: center;
+        margin-top: 15px;
+        /* margin-left: 15px; */
+    }
 }
 
 @media (max-width: 500px) {
@@ -886,6 +863,14 @@ footer span a:hover{
     }
     .git-list{
         grid-template-columns: repeat(1,1fr);
+    }
+    .know-work p{
+        color:gray;
+        font-size: 12px;
+        font-weight: 550;
+        text-align: center;
+        margin-top: 15px;
+        /* margin-left: 15px; */
     }
     
 }
