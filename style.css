@@ -813,16 +813,26 @@ footer span a:hover{
     .know-work p{
         color:gray;
         font-size: 12px;
-        font-weight: 550;
+        /* font-weight: 550; */
         text-align: center;
         margin-top: 15px;
         /* margin-left: 15px; */
+    }
+    .navbar .logo a{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
     }
 }
 
 @media (max-width: 500px) {
     .about .about-content .text-2{
         font-size: 50px;
+    }
+    .navbar .logo a{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
     }
     .home .home-content .text-3{
         font-size: 27px;
@@ -867,10 +877,8 @@ footer span a:hover{
     .know-work p{
         color:gray;
         font-size: 12px;
-        font-weight: 550;
         text-align: center;
         margin-top: 15px;
-        /* margin-left: 15px; */
     }
     
 }
