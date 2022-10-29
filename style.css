@@ -277,6 +277,7 @@ section .title::after{
     margin-top: 20px;
     border-radius: 6px;
     transition: all 0.3s ease;
+    text-align: justify;
 }
 .about .about-content .right .text-2{
     display: inline-block;
@@ -550,7 +551,10 @@ section .title::after{
     width:100%;
     height:100%;
 }
-
+.gr-list .gr-work-st{
+    margin: auto;
+    margin-bottom: 20px;
+}
 
 /* contact section styling */
 .contact{
