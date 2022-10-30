@@ -780,6 +780,10 @@ footer span a:hover{
     .git-list{
         grid-template-columns: repeat(1,1fr);
     }
+    .gr-list .gr-work-st img{
+        width:auto;
+        height:auto;
+    }
 }
 
 @media (max-width: 690px) {
@@ -812,6 +816,11 @@ footer span a:hover{
     }
     .git-list{
         grid-template-columns: repeat(1,1fr);
+    }
+    .gr-list .gr-work-st img{
+        width:320px;
+        height:200px;
+        margin-top: -50px;
     }
     .know-work p{
         color:gray;
@@ -884,8 +893,9 @@ footer span a:hover{
         margin-top: 15px;
     }
     .gr-list .gr-work-st img{
-        width:250px;
-        height:200px;
+        width:220px;
+        height:180px;
+        margin-top: -50px;
     }
     
 }
