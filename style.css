@@ -291,11 +291,9 @@ section .title::after{
     color:gray;
     font-size: 20px;
     font-weight:500;
-    /* padding: 10px 30px; */
-    /* margin-top: 20px; */
     border-radius: 6px;
-    /* border: 2px solid crimson; */
     transition: all 0.3s ease;
+    text-align: justify;
 }
 
 .about .title{
@@ -883,6 +881,10 @@ footer span a:hover{
         font-size: 12px;
         text-align: center;
         margin-top: 15px;
+    }
+    .gr-list .gr-work-st img{
+        width:250px;
+        height:200px;
     }
     
 }
