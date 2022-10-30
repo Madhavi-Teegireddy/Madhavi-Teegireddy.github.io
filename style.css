@@ -551,8 +551,9 @@ section .title::after{
 }
 .gr-list .gr-work-st{
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
+
 
 /* contact section styling */
 .contact{
