@@ -818,21 +818,19 @@ footer span a:hover{
         grid-template-columns: repeat(1,1fr);
     }
     .gr-list .gr-work-st img{
-        width:320px;
+        width:400px;
         height:200px;
-        margin-top: -50px;
     }
     .know-work p{
         color:gray;
         font-size: 12px;
-        /* font-weight: 550; */
         text-align: center;
         margin-top: 15px;
         /* margin-left: 15px; */
     }
     .navbar .logo a{
         color: #fff;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 600;
     }
 }
@@ -843,7 +841,7 @@ footer span a:hover{
     }
     .navbar .logo a{
         color: #fff;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 600;
     }
     .home .home-content .text-3{
@@ -897,5 +895,6 @@ footer span a:hover{
         height:180px;
         margin-top: -50px;
     }
+   
     
 }
