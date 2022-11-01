@@ -350,6 +350,8 @@ section .title::after{
         font-size: 30px;
 }
 .stack{
+    color:white;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 18px;
 }
@@ -372,7 +374,7 @@ section .title::after{
 }
 
 .work  h3{
-    color:gray;
+    color:white;
     font-size: 25px;
     margin-top: 10px;
     text-align: center;
@@ -388,56 +390,28 @@ section .title::after{
     color:white
 }
 
-.layer{
-    width:100%;
-    height:0;
-    background: linear-gradient(rgba(0,0,0,0.1),#3457D5);
-    border-radius: 10px;
-    position: absolute;
-    left:0;
-    bottom:0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    transition:height 0.5s;
-}
  .work:hover img{
     transform: scale(1.1);
  }
- .work:hover .layer{
-    height:100%;
- }
+ 
 
-.layer h3{
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-.layer div{
+
+.work div{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    width:auto;
+    width:200px;
     gap:30px;
+    margin: auto;
 }
-.layer div div{
-    width:70px;
+
+.work div a{
+    font-size: 20px;
 }
 
 
-.layer a{
-    margin-top: 20px;
-    color:#3457D5;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width:60px;
-    height:60px;
-    border-radius: 50%;
-}
+
+
+
 
 
 
