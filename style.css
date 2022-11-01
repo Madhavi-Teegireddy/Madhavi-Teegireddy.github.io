@@ -529,6 +529,14 @@ section .title::after{
 }
 
 
+.calendar {
+    font-family: Helvetica, arial;
+    text-align: center;
+    color:white;
+}
+
+
+
 /* contact section styling */
 .contact{
     background-color: black;
@@ -808,6 +816,7 @@ footer span a:hover{
         font-size: 22px;
         font-weight: 600;
     }
+   
 }
 
 @media (max-width: 500px) {
@@ -870,6 +879,6 @@ footer span a:hover{
         height:180px;
         margin-top: -50px;
     }
+
    
-    
 }
