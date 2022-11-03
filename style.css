@@ -1117,5 +1117,13 @@ footer span a:hover{
         margin: 0 auto;
         margin-bottom: 50px;
     }
+
+    .contrib-number {
+        font-weight: 300;
+        line-height: 1.3em;
+        font-size: 10px;
+        display: block;
+        color: white;
+    }
    
 }
