@@ -434,6 +434,7 @@ section .title::after{
     margin: auto;
     margin-top: 50px;
     height: auto;
+
 }
 .know-stack{
     text-align: center;
@@ -452,8 +453,8 @@ section .title::after{
 
 .know .know-work div{
     margin: auto;
-    width:60px;
-    height: 60px;
+    width:50px;
+    height: 50px;
 }
 .know .know-work div img{
     margin-top: 10px;
@@ -1043,6 +1044,14 @@ footer span a:hover{
         margin: 0 auto;
         margin-bottom: 50px;
     }
+
+    .contrib-number {
+        font-weight: 300;
+        line-height: 1.3em;
+        font-size: 18px;
+        display: block;
+        color: white;
+    }
    
 }
 
@@ -1121,7 +1130,7 @@ footer span a:hover{
     .contrib-number {
         font-weight: 300;
         line-height: 1.3em;
-        font-size: 10px;
+        font-size: 14px;
         display: block;
         color: white;
     }
