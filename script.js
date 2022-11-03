@@ -36,8 +36,8 @@ $(document).ready(function(){
     // typing text animation script
     var typed = new Typed(".typing", {
         strings: ["Full-Stack Web-Developer", "MERN-Stack Developer"],
-        typeSpeed: 100,
-        backSpeed: 80,
+        typeSpeed: 50,
+        backSpeed: 20,
         loop: true
     });
 
