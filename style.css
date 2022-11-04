@@ -356,6 +356,10 @@ section .title::after{
     margin-bottom: 18px;
 }
 
+.stack span{
+    color:white;
+}
+
 .work{
     position: relative;
     overflow: hidden;
@@ -375,9 +379,10 @@ section .title::after{
 
 .work  h3{
     color:white;
-    font-size: 25px;
+    font-size: 23px;
     margin-top: 10px;
     text-align: center;
+    font-family:'Ubuntu', sans-serif
 }
 
 .work p{
