@@ -286,7 +286,7 @@ section .title::after{
     border-radius: 6px;
     transition: all 0.3s ease;
 }
-.about .about-content .right .text-5{
+.about .about-content  .text-5{
     display: inline-block;
     color:gray;
     font-size: 20px;
@@ -320,7 +320,7 @@ section .title::after{
     color:white;
 }
 .about-content .text-5{
-    width:70%;
+    width:90%;
     color:gray;
     font-size: 20px;
     margin: auto;
