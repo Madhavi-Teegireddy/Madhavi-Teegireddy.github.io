@@ -365,7 +365,7 @@ section .title::after{
     overflow: hidden;
     border-style: solid;
     border-width: 3px;
-    border-image: conic-gradient(black, black, black, blue, black, black, black) 1;
+    /* border-image: conic-gradient(black, black, black, blue, black, black, black) 1; */
     border-radius: 10px;
     margin-bottom: 30px;
 }
