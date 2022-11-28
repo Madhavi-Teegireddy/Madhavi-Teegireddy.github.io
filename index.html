@@ -19,6 +19,7 @@
 
 </head>
 <body>
+  <div id="preloader"></div>
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -458,6 +459,14 @@ src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 
   GitHubCalendar(".calendar", "madhavi-teegireddy", { responsive: true });
 
+</script>
+
+<!-- loading js -->
+<script>
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function() {
+    loader.style.display = "none";
+  })
 </script>
 
 

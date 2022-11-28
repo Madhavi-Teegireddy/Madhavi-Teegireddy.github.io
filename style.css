@@ -1134,3 +1134,14 @@ footer span a:hover{
     }
    
 }
+
+
+/* loading for page */
+#preloader {
+    background: #000 url("images/loading1.gif") no-repeat center center;
+    height:100vh;
+    background-size: 30%;
+    width:100%;
+    position: fixed;
+    z-index:100
+}
