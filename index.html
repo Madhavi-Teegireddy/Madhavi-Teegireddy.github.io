@@ -112,7 +112,7 @@
                             <i class="fa-brands fa-github"></i>
                         </a>
                   </div>
-            </div>
+              </div>
                 <div class="work" style="border-image: conic-gradient(black, black, black, green, black, black, black) 1">
                     <img src="images/fatsecret.PNG">
                     <h3>Fatsecret</h3>
@@ -183,6 +183,23 @@
               </div>
                 </div>
                 <div class="work" style="border-image: conic-gradient(black, black, black, rgb(161, 46, 65), black, black, black) 1">
+                  <img src="images/shop-cart.PNG">
+                  <h3>Shopping-Cart-App</h3>
+                  <p>Nykaa is An E-commerce website that sells beauty, wellness and fashion
+                    products.
+                </p>
+                <p class="stack"><span>Tech Stack: HTML | CSS | JavaScript</span></p>
+                <div>
+                      <a href="https://shopping-cart-app-gamma.vercel.app/" target="_blank">Demo
+                          <i class="fa fa-external-link" aria-hidden="true"></i>
+                      </a>
+                      <a href="https://github.com/Madhavi-Teegireddy/Shopping-Cart-App" target="_blank">Code
+                          <i class="fa-brands fa-github"></i>
+                      </a>
+                </div>
+              </div>
+
+                <div class="work" style="border-image: conic-gradient(black, black, black, rgb(161, 46, 65), black, black, black) 1">
                     <img src="images/nykaa.PNG">
                     <h3>Nykaa</h3>
                     <p>Nykaa is An E-commerce website that sells beauty, wellness and fashion
@@ -198,9 +215,19 @@
                         </a>
                   </div>
                 </div>
+
+              
+            
+              
             </div>
         </div>
+        <div class="btnContainer">
+          <button class="btnre">Get More</button>
+        </div>
+        
+        
     </section>
+    
 
     <!-- Skills here -->
   <section class="know" id="skills">
@@ -471,6 +498,29 @@ src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
     loader.style.display = "none";
   })
 </script> -->
+
+
+
+
+<!-- get more projects button -->
+<script>
+  var work = document.querySelectorAll('.work');
+  var btnre = document.querySelector('.btnre');
+  var currentImg = 6
+  btnre.addEventListener('click',
+  function() {
+    // console.log('hi');
+    for(var i= currentImg; i< currentImg+3; i++){
+      if(work[i]) {
+        work[i].style.display = 'block';
+      }
+    }
+    currentImg +=3;
+    if(currentImg >= work.length) {
+      event.target.style.display = "none"
+    }
+  })
+</script>
 
 
 
