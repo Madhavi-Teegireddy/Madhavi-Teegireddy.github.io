@@ -1213,7 +1213,7 @@ html {
 .box{
     position:relative;
     width: 300px;
-    height:300px;
+    height:350px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     overflow: hidden;
@@ -1223,9 +1223,9 @@ html {
     content: "";
     position: absolute;
     inset: -10px 140px;
-    background: linear-gradient(315deg, #00ccff, #d40094);
+    background: linear-gradient(315deg, #00ccff, #f8199b);
     transition: 0.5s;
-    animation: animate 4s linear infinite;
+    animation: animate 7s linear infinite;
 }
 
 .box:hover::before{
@@ -1257,6 +1257,11 @@ html {
     z-index: 3;
     border-radius: 50%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 .bcontent img{
@@ -1268,7 +1273,44 @@ html {
     object-fit: cover;
     transition: 0.5s;
     pointer-events: none;
+    z-index: 3;
 }
 
+.box:hover .bcontent img{
+    opacity: 0;
+}
 
+.bcontent h2{
+    position: relative;
+    font-size: 16px;
+    color:white;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.bcontent h2 span{
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.bcontent a{
+    position: relative;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color:#3457D5;
+    color:black;
+    border-radius: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.bcontent a:hover{
+    letter-spacing: 0.2em;
+    border:3px solid #3457D5;
+    background-color: black;
+    color:gray;
+
+}
 
