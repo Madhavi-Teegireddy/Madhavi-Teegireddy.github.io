@@ -1151,7 +1151,8 @@ footer span a:hover{
         display: block;
         color: white;
     }
-   
+
+    
 }
 
 
@@ -1217,6 +1218,7 @@ html {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .box::before{
