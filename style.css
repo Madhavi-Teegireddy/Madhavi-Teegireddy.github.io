@@ -956,10 +956,10 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
-    .about .about-content .left img{
-        height: 300px;
-        width: 250px;
-    }
+    
+    
+    
+
     .pro-list{
         grid-template-columns: repeat(2,1fr);
     }
@@ -1204,7 +1204,6 @@ html {
 .work{
     border: 1px solid;
   padding: 10px;
-  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
   box-shadow: rgb(78, 82, 87) 0px 20px 30px -10px;
 }
 
@@ -1214,24 +1213,23 @@ html {
 .box{
     position:relative;
     width: 300px;
-    height:350px;
+    height:300px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 20px;
 }
 
 .box::before{
     content: "";
     position: absolute;
-    inset: -10px 140px;
-    background: linear-gradient(315deg, #00ccff, #f8199b);
+    inset: -10px 120px;
+    background: linear-gradient(315deg, #00ccff,  #d400d4);
     transition: 0.5s;
-    animation: animate 7s linear infinite;
+    animation: animate 10s linear infinite;
 }
 
 .box:hover::before{
-    inset: -20px 0px;
+    inset: -20px -10px;
 }
 
 @keyframes animate {
@@ -1246,7 +1244,7 @@ html {
 .box::after{
     content:"";
     position: absolute;
-    inset: 6px;
+    inset: 2px;
     background: #162052;
     border-radius: 50%;
     z-index: 1;
@@ -1256,7 +1254,7 @@ html {
     position: absolute;
     inset: 30px;
     border: 6px solid #070a1c;
-    z-index: 3;
+    z-index: 2;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -1268,12 +1266,13 @@ html {
 
 .bcontent img{
     position: absolute;
-    top:0;
+    top:-8px;
     left:0;
-    width:100%;
-    height:100%;
+    width:130%;
+    height:110%;
     object-fit: cover;
     transition: 0.5s;
+    margin-left: -30px;
     pointer-events: none;
     z-index: 3;
 }
@@ -1284,8 +1283,9 @@ html {
 
 .bcontent h2{
     position: relative;
-    font-size: 16px;
+    font-size: 1rem;
     color:white;
+    text-align: center;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -1293,7 +1293,7 @@ html {
 
 .bcontent h2 span{
     font-weight: 300;
-    font-size: 0.9em;
+    font-size: 0.7rem;
 }
 
 .bcontent a{
@@ -1306,6 +1306,9 @@ html {
     font-weight: 500;
     text-decoration: none;
     transition: 0.5s;
+    font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .bcontent a:hover{
@@ -1313,6 +1316,35 @@ html {
     border:3px solid #3457D5;
     background-color: black;
     color:gray;
-
 }
 
+@media (max-width: 770px) and (min-width: 10px) {
+  
+    .box {
+        margin: auto;
+      position: relative;
+      width: 15rem;
+      height: 15rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      overflow: hidden;
+      /* padding: 2rem 0; */
+      margin-top: 2rem;
+      margin-bottom: 50px;
+    }
+  
+    .bcontent img {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 130%;
+      height: 110%;
+      object-fit: cover;
+      transition: 0.5s;
+      pointer-events: none;
+      z-index: 3;
+      margin-left: -22px;
+      /* margin-top: 1px; */
+    }
+    
+  }
