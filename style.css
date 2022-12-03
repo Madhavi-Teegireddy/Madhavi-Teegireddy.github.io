@@ -926,6 +926,8 @@ footer span a:hover{
     .about .about-content .text-2{
         font-size: 40px;
     }
+  
+
     .home .home-content .text-3{
         font-size: 25px;
     }
@@ -1022,6 +1024,9 @@ footer span a:hover{
     .know-list {
         grid-template-columns: repeat(3,1fr);
     }
+
+    
+
     .git-list{
         grid-template-columns: repeat(1,1fr);
     }
@@ -1118,6 +1123,7 @@ footer span a:hover{
     .know-list {
         grid-template-columns: repeat(3,1fr);
     }
+
     .git-list{
         grid-template-columns: repeat(1,1fr);
     }
@@ -1154,6 +1160,36 @@ footer span a:hover{
 
     
 }
+
+@media (max-width: 770px) and (min-width: 10px) {
+  
+    .box {
+        margin: auto;
+      position: relative;
+      width: 15rem;
+      height: 15rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      overflow: hidden;
+      /* padding: 2rem 0; */
+      margin-top: 2rem;
+      margin-bottom: 50px;
+    }
+  
+    .bcontent img {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 130%;
+      height: 110%;
+      object-fit: cover;
+      transition: 0.5s;
+      pointer-events: none;
+      z-index: 3;
+      margin-left: -22px;
+    }
+    
+  }
 
 
 /* loading for page */
@@ -1318,33 +1354,3 @@ html {
     color:gray;
 }
 
-@media (max-width: 770px) and (min-width: 10px) {
-  
-    .box {
-        margin: auto;
-      position: relative;
-      width: 15rem;
-      height: 15rem;
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 50%;
-      overflow: hidden;
-      /* padding: 2rem 0; */
-      margin-top: 2rem;
-      margin-bottom: 50px;
-    }
-  
-    .bcontent img {
-      position: absolute;
-      top: 0px;
-      left: 0;
-      width: 130%;
-      height: 110%;
-      object-fit: cover;
-      transition: 0.5s;
-      pointer-events: none;
-      z-index: 3;
-      margin-left: -22px;
-      /* margin-top: 1px; */
-    }
-    
-  }
