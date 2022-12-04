@@ -302,9 +302,8 @@ section .title::after{
         color:white;
         font-size: 30px;
 }
-.about .about-content .right a{
+/* .about .about-content .right a{
     display: inline-block;
-    /* display:inline-flex; */
     background: #3457D5;
     color:black;
     font-size: 15px;
@@ -315,11 +314,63 @@ section .title::after{
     transition: all 0.3s ease;
     width: auto;
     margin-top: 20px;
-}
-.about .about-content .right a:hover{
+} */
+/* .about .about-content .right a:hover{
     color: gray;
     background: none;
+} */
+
+/* .res{
+    color:black;
+    border-radius: 6px;
+    border: 2px solid #3457D5;
+    width: 120px;
+    background: #3457D5;
+    font-size: 15px;
+    font-weight:500;
+    padding: 10px 30px;
+    border-radius: 6px;
+    margin-top: 20px;
+    text-decoration: none;
+} */
+
+/* .res:hover{
+    border:3px solid #3457D5;
+    background: none;
+} */
+
+/* .res a{
+    color:white;
+} */
+
+
+.res{
+    display: flex;
+    margin-top: 20px;
 }
+.res a{
+    position: relative;
+    padding: 10px 20px;
+    background-color:#3457D5;
+    color:black;
+    border-radius: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+
+.res a:hover{
+    letter-spacing: 0.2em;
+    border:3px solid #3457D5;
+    background-color: black;
+    color:gray;
+}
+
+
 .about h2{
     color:white;
 }
@@ -1010,9 +1061,15 @@ footer span a:hover{
         text-align: center;
         margin-top: -20px;
     }
+    .res{
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 690px) {
+    
     .max-width{
         padding: 0 23px;
     }
@@ -1105,10 +1162,20 @@ footer span a:hover{
         text-align: center;
         margin-top: -20px;
     }
+    .res{
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+    }
    
 }
 
 @media (max-width: 500px) {
+    .res{
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+    }
     .about .about-content .text-2{
         font-size: 50px;
     }
