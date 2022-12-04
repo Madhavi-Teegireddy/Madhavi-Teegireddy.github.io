@@ -253,6 +253,7 @@ section .title::after{
 .about .about-content .right .text{
     font-size: 20px;
     margin-bottom: 10px;
+    margin-top: -20px;
 }
 .about .about-content .right .text span{
     color: #3457D5;
@@ -264,7 +265,7 @@ section .title::after{
     text-align: justify;
 }
 .about .about-content .right  .text-1,.text-3{
-    display: inline-block;
+    /* display: inline-block; */
     color: grey;
     font-size: 20px;
     border-radius: 6px;
@@ -280,11 +281,12 @@ section .title::after{
     text-align: justify;
 }
 .about .about-content .right .text-2{
-    display: inline-block;
+    /* display: inline-block; */
     color:#3457D5;
     font-size: 30px;
     border-radius: 6px;
     transition: all 0.3s ease;
+    margin-top: -20px;
 }
 .about .about-content  .text-5{
     display: inline-block;
@@ -302,15 +304,17 @@ section .title::after{
 }
 .about .about-content .right a{
     display: inline-block;
+    /* display:inline-flex; */
     background: #3457D5;
     color:black;
     font-size: 15px;
     font-weight:500;
     padding: 10px 30px;
-    margin-top: 20px;
     border-radius: 6px;
     border: 2px solid #3457D5;
     transition: all 0.3s ease;
+    width: auto;
+    margin-top: 20px;
 }
 .about .about-content .right a:hover{
     color: gray;
@@ -597,7 +601,6 @@ section .title::after{
       text-align: right;
       padding: 0 14px 10px 0;
       display: inline-block;
-      float: right;
       float: right;
   }
   
@@ -959,7 +962,10 @@ footer span a:hover{
         margin-bottom: 35px;
     }
     
-    
+    .box{
+        margin: auto;
+        margin-bottom: 50px;
+    }
     
 
     .pro-list{
@@ -993,6 +999,17 @@ footer span a:hover{
         position: fixed;
         z-index:100
     }
+    .about .about-content .right .text-1{
+        text-align: center;
+    }
+    .about .about-content .right .text-2{
+        text-align: center;
+        margin-top: -20px;
+    }
+    .about .about-content .right .text{
+        text-align: center;
+        margin-top: -20px;
+    }
 }
 
 @media (max-width: 690px) {
@@ -1023,6 +1040,9 @@ footer span a:hover{
     }
     .know-list {
         grid-template-columns: repeat(3,1fr);
+    }
+    .box{
+        margin: auto;
     }
 
     
@@ -1074,6 +1094,17 @@ footer span a:hover{
         position: fixed;
         z-index:100
     }
+    .about .about-content .right .text-1{
+        text-align: center;
+    }
+    .about .about-content .right .text-2{
+        text-align: center;
+        margin-top: -20px;
+    }
+    .about .about-content .right .text{
+        text-align: center;
+        margin-top: -20px;
+    }
    
 }
 
@@ -1081,6 +1112,18 @@ footer span a:hover{
     .about .about-content .text-2{
         font-size: 50px;
     }
+    .about .about-content .right .text-1{
+        text-align: center;
+    }
+    .about .about-content .right .text-2{
+        text-align: center;
+        margin-top: -20px;
+    }
+    .about .about-content .right .text{
+        text-align: center;
+        margin-top: -20px;
+    }
+   
     .navbar .logo a{
         color: #fff;
         font-size: 22px;
@@ -1157,21 +1200,20 @@ footer span a:hover{
         display: block;
         color: white;
     }
-
-    
+        
 }
+
 
 @media (max-width: 770px) and (min-width: 10px) {
   
     .box {
       margin: auto;
       position: relative;
-      width: 100px;
-      height: 100x;
+      width: 15rem;
+      height: 15rem;
       background-color: rgba(0, 0, 0, 0.5);
       border-radius: 50%;
       overflow: hidden;
-      /* padding: 2rem 0; */
       margin-top: 2rem;
       margin-bottom: 50px;
     }
@@ -1188,6 +1230,7 @@ footer span a:hover{
       z-index: 3;
       margin-left: -22px;
     }
+
     
   }
 
@@ -1302,13 +1345,13 @@ html {
 
 .bcontent img{
     position: absolute;
-    top:-8px;
+    top:-5px;
     left:0;
-    width:130%;
+    width:135%;
     height:110%;
     object-fit: cover;
     transition: 0.5s;
-    margin-left: -30px;
+    margin-left: -40px;
     pointer-events: none;
     z-index: 3;
 }
