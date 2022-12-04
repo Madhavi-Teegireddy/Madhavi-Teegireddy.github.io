@@ -495,7 +495,6 @@ section .title::after{
     margin: auto;
     margin-top: 50px;
     height: auto;
-
 }
 .know-stack{
     text-align: center;
@@ -505,11 +504,10 @@ section .title::after{
 .know-work{
     position: relative;
     overflow: hidden;
-    border-style: solid;
+    border-style:solid;
     border-width: 3px;
-    /* border-image: conic-gradient(black,black, rgb(82, 82, 180),blue,rgb(115, 115, 190), black, black) 3; */
     border-radius: 20px;
-    margin-bottom: 30px;   
+    margin-bottom: 30px;
 }
 
 .know .know-work div{
@@ -1167,10 +1165,19 @@ footer span a:hover{
         margin-top: 20px;
         justify-content: center;
     }
-   
 }
 
 @media (max-width: 500px) {
+    .know .know-work div{
+        margin: auto;
+        width:40px;
+        height: 40px;
+    }
+    .know .know-work div img{
+        margin-top: 10px;
+        width:100%;
+        height:100%;
+    }
     .res{
         display: flex;
         margin-top: 20px;
@@ -1314,13 +1321,41 @@ footer span a:hover{
 
 
 /* loadmore projects */
-.btnContainer {
+
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btnContainer button{
+    position: relative;
+    padding: 10px 20px;
+    background-color:#3457D5;
+    color:white;
+    border-radius: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+
+.btnContainer button:hover{
+    letter-spacing: 0.2em;
+    border:3px solid #3457D5;
+    background-color: black;
+    color:gray;
+}
+/* .btnContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.btnContainer button{
+/* .btnContainer button{
     border:none;
     border-radius: 5px;
     width:150px;
@@ -1329,7 +1364,8 @@ footer span a:hover{
     background-color: #1D75AB;
     color:white;
     cursor: pointer;
-}
+    transition: 0.5s;
+} */
 
 .work{
     display: none;
