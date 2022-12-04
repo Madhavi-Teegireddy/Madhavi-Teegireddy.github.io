@@ -1164,10 +1164,10 @@ footer span a:hover{
 @media (max-width: 770px) and (min-width: 10px) {
   
     .box {
-        margin: auto;
+      margin: auto;
       position: relative;
-      width: 15rem;
-      height: 15rem;
+      width: 100px;
+      height: 100x;
       background-color: rgba(0, 0, 0, 0.5);
       border-radius: 50%;
       overflow: hidden;
