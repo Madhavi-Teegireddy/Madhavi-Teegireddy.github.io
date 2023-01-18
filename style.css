@@ -238,6 +238,22 @@ section .title::after{
 .about .about-content .left{
     width: 45%;
 }
+
+.about .about-content .leftno {
+    width: 35%;
+}
+.about .about-content .rightno .textno {
+    color:gray;
+    font-size: 20px;
+    text-align: justify;
+}
+.about .about-content .leftno img {
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid pink;
+}
 .about .about-content .left img{
     height: 300px;
     width: 250px;
@@ -249,6 +265,11 @@ section .title::after{
 }
 .about .about-content .right{
     width: 55%;
+}
+
+.about .about-content .rightno {
+    width: 65%;
+    border: 1px solid teal
 }
 .about .about-content .right .text{
     font-size: 20px;
@@ -337,9 +358,9 @@ section .title::after{
     color:white;
 }
 .about-content .text-5{
-    width:90%;
+    width:100%;
     color:gray;
-    font-size: 20px;
+    font-size: 13px;
     margin: auto;
 }
 
@@ -1130,6 +1151,8 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+
+
     .know .know-work div{
         margin: auto;
         width:40px;
@@ -1241,6 +1264,7 @@ footer span a:hover{
 
 
 @media (max-width: 770px) and (min-width: 10px) {
+
   
     .box {
       margin: auto;
@@ -1253,6 +1277,8 @@ footer span a:hover{
       margin-top: 2rem;
       margin-bottom: 50px;
     }
+
+
   
     .bcontent img {
       position: absolute;
@@ -1361,6 +1387,16 @@ html {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     overflow: hidden;
+}
+
+.boxcode{
+    width: 35%;
+    margin: auto;
+}
+.boxcode img{
+    width: 80%;
+    height: 80%;
+    border:1px solid red
 }
 
 .box::before{
