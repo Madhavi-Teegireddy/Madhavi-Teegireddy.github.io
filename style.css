@@ -237,7 +237,6 @@ section .title::after{
 
 .about .about-content .left{
     width: 35%;
-    /* border:1px solid red; */
 }
 
 
@@ -247,6 +246,7 @@ section .title::after{
     object-fit: cover;
     border-radius: 10px;
 }
+
 .about-content{
     margin-top: 50px;
 }
@@ -1053,11 +1053,15 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%;
     }
-    .about .about-content .left img{
+    /* .about .about-content .left img{
         height: 220px;
-        width: 180px;
-    }
-    
+        width: 200px;
+    } */
+     .about .about-content .left img {
+        margin-top: 15px;
+        height: 240px;
+        width: 260px;
+}
     .pro-list{
         grid-template-columns: repeat(1,1fr);
         width:450px;
@@ -1200,9 +1204,11 @@ footer span a:hover{
         line-height: 38px;
     }
     .about .about-content .left img{
-        height: 220px;
-        width: 180px;
+        margin-top: 15px;
+        height: 240px;
+        width: 260px;
     }
+
     .pro-list{
         grid-template-columns: repeat(1,1fr);
         width:350px;
