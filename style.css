@@ -229,31 +229,18 @@ section .title::after{
     color: #3457D5;
     background: none;
 }
-.about{
+.about, .mad{
     background-color:#000000;
 }
 
 /* about section styling */
 
 .about .about-content .left{
-    width: 45%;
+    width: 35%;
+    /* border:1px solid red; */
 }
 
-.about .about-content .leftno {
-    width: 35%;
-}
-.about .about-content .rightno .textno {
-    color:gray;
-    font-size: 20px;
-    text-align: justify;
-}
-.about .about-content .leftno img {
-    height: 300px;
-    width: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 1px solid pink;
-}
+
 .about .about-content .left img{
     height: 300px;
     width: 250px;
@@ -1262,6 +1249,18 @@ footer span a:hover{
 }
 
 @media (max-width: 770px) and (min-width: 10px) {
+    .boxcode {
+        margin-top: 20px;
+            width: 85%;
+            margin: auto;
+            border: 1px solid red;
+        }
+    
+        .boxcode img {
+            width: 80%;
+            height: 80%;
+            margin:auto
+        }
 
     .box {
       margin: auto;
@@ -1377,6 +1376,8 @@ html {
     width: 80%;
     height: 80%;
 }
+
+
 
 .box::before{
     content: "";
