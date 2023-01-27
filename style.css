@@ -440,13 +440,6 @@ section .title::after{
 }
 
 
-
-
-
-
-
-
-
 /* skills section styling */
 
 .know{
@@ -491,8 +484,6 @@ section .title::after{
     height:100%;
 }
 
-
-
 .know-work p{
     color:gray;
     font-size: 18px;
@@ -500,8 +491,6 @@ section .title::after{
     text-align: center;
     margin-top: 15px;
 }
-
-
 .know-work{
     transition:transform 0.5s;
 }
