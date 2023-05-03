@@ -589,11 +589,20 @@
   </script>
 
   <!-- loading js -->
-  <script>
+  <!-- <script>
     var loader = document.getElementById("preloader");
     window.addEventListener("load", function () {
       loader.style.display = "none";
     })
+  </script> -->
+
+  <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        loader.style.display = "none";
+      }, 2000);
+    });
   </script>
 
   <!-- <div><a href="https://www.youtube.com/watch?v=t_aO4EMP-i0"></a></div> -->
